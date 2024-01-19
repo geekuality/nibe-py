@@ -56,6 +56,10 @@ class CSVConverter:
 
         self._make_mapping_parameter()
 
+        self._merge_extensions()
+
+        self._drop_nameless_rows()
+
         self._export_to_file()
 
     def _make_dict(self):
@@ -240,11 +244,18 @@ class CSVConverter:
 
         raise TypeError(f"Object of type {type(o)} is not JSON serializable")
 
+    def _merge_extensions(self):
+        self.dict = self._make_dict()
+        update_dict(self.dict, self.extensions, True)
+
+    def _drop_nameless_rows(self):
+        for row in self.dict.copy():
+            if not self.dict[row].get("name"):
+                del self.dict[row]
+
     def _export_to_file(self):
-        o = self._make_dict()
-        update_dict(o, self.extensions, True)
         with open(self.out_file, "w", encoding="utf-8") as fh:
-            json.dump(o, fh, indent=2, default=self._convert_series_to_dict)
+            json.dump(self.dict, fh, indent=2, default=self._convert_series_to_dict)
             fh.write("\n")
 
 

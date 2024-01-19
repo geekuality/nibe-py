@@ -273,7 +273,13 @@
     "title": "Oper. mode shunt climate system 7",
     "factor": 1,
     "size": "u8",
-    "name": "oper-mode-shunt-climate-system-7-30131"
+    "name": "oper-mode-shunt-climate-system-7-30131",
+    "mappings": {
+      "0": "Inactive",
+      "10": "Off",
+      "20": "Opening",
+      "30": "Closing"
+    }
   },
   "30132": {
     "title": "Oper. mode shunt climate system 6",
@@ -1672,7 +1678,11 @@
     "title": "Class 1 alarm",
     "factor": 1,
     "size": "u8",
-    "name": "class-1-alarm-32196"
+    "name": "class-1-alarm-32196",
+    "mappings": {
+      "0": "No alarm",
+      "1": "Active alarm"
+    }
   },
   "31019": {
     "title": "Frost protection status",
@@ -1732,25 +1742,50 @@
     "title": "Oper. mode shunt climate system 3",
     "factor": 1,
     "size": "u8",
-    "name": "oper-mode-shunt-climate-system-3-31032"
+    "name": "oper-mode-shunt-climate-system-3-31032",
+    "mappings": {
+      "0": "Inactive",
+      "10": "Off",
+      "20": "Opening",
+      "30": "Closing"
+    }
   },
   "31033": {
     "title": "Oper. mode shunt climate system 2",
     "factor": 1,
     "size": "u8",
-    "name": "oper-mode-shunt-climate-system-2-31033"
+    "name": "oper-mode-shunt-climate-system-2-31033",
+    "mappings": {
+      "0": "Inactive",
+      "10": "Off",
+      "20": "Opening",
+      "30": "Closing"
+    }
   },
   "31034": {
     "title": "Oper. mode shunt climate system 1",
     "factor": 1,
     "size": "u8",
-    "name": "oper-mode-shunt-climate-system-1-31034"
+    "name": "oper-mode-shunt-climate-system-1-31034",
+    "mappings": {
+      "0": "Inactive",
+      "10": "Off",
+      "20": "Opening",
+      "30": "Closing"
+    }
   },
   "31035": {
     "title": "Operating. mode shunt controlled additional heat",
     "factor": 1,
     "size": "u8",
-    "name": "operating-mode-shunt-controlled-additional-heat-31035"
+    "name": "operating-mode-shunt-controlled-additional-heat-31035",
+    "mappings": {
+      "10": "Off",
+      "20": "Active",
+      "30": "Passive",
+      "40": "Opening",
+      "50": "Closing"
+    }
   },
   "31038": {
     "title": "Fan mode 1",
@@ -1925,7 +1960,11 @@
     "title": "Pool 1 (QN19)",
     "factor": 1,
     "size": "u8",
-    "name": "pool-1-qn19-31135"
+    "name": "pool-1-qn19-31135",
+    "mappings": {
+      "0": "Closed to pool",
+      "1": "Open to pool"
+    }
   },
   "31452": {
     "title": "Version (EB101)",
@@ -2215,19 +2254,31 @@
     "title": "Climate system 4",
     "factor": 1,
     "size": "u8",
-    "name": "climate-system-4-31824"
+    "name": "climate-system-4-31824",
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "31825": {
     "title": "Climate system 3",
     "factor": 1,
     "size": "u8",
-    "name": "climate-system-3-31825"
+    "name": "climate-system-3-31825",
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "31826": {
     "title": "Climate system 2",
     "factor": 1,
     "size": "u8",
-    "name": "climate-system-2-31826"
+    "name": "climate-system-2-31826",
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "31827": {
     "title": "Climate system 1 (HMP)",
@@ -2239,7 +2290,11 @@
     "title": "Pool 1 pump status",
     "factor": 1,
     "size": "u8",
-    "name": "pool-1-pump-status-31829"
+    "name": "pool-1-pump-status-31829",
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "31855": {
     "title": "Requested compressor frequency (EB101)",
@@ -3081,7 +3136,11 @@
     "max": 1.0,
     "default": 1.0,
     "name": "permit-additional-heat-heating-40181",
-    "write": true
+    "write": true,
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "40182": {
     "title": "Permit heating",
@@ -3091,7 +3150,11 @@
     "max": 1.0,
     "default": 1.0,
     "name": "permit-heating-40182",
-    "write": true
+    "write": true,
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "40183": {
     "title": "Permit cooling",
@@ -3101,7 +3164,11 @@
     "max": 1.0,
     "default": 1.0,
     "name": "permit-cooling-40183",
-    "write": true
+    "write": true,
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "40184": {
     "title": "Auto mode, start temperature for cooling",

@@ -291,10 +291,35 @@
     "description": "M12676EN-1 - S1155/S1255 ",
     "files": ["s1155_s1255.json"],
     "data": {
+      "30097": {
+        "mapping": {
+          "10": "Intermittent",
+          "20": "Continuous",
+          "30": "10 Days Cont."
+        }
+      },
+      "30854": {
+        "mapping": {
+          "0": "Auto",
+          "1": "Manual"
+        }
+      },
       "31101": {
         "mappings": {
           "0": "Off",
           "1": "On"
+        }
+      },
+      "31320": {
+        "mappings": {
+          "0": "Auto",
+          "1": "Manual"
+        }
+      },
+      "32197": {
+        "mappings": {
+          "0": "Heating",
+          "1": "Hot water"
         }
       }
     }
@@ -307,6 +332,18 @@
         "mappings": {
           "0": "Off",
           "1": "On"
+        }
+      },
+      "40784": {
+        "mappings": {
+          "0": "Auto",
+          "1": "Manual"
+        }
+      },
+      "32197": {
+        "mappings": {
+          "0": "Heating",
+          "1": "Hot water"
         }
       }
     }
@@ -352,7 +389,7 @@
   },
   {
     "description": "M12676EN-1 - F2120 slave 4",
-    "files": [],
+    "files": ["smos40.json"],
     "data": {
       "31764": {
         "mappings": {
@@ -365,7 +402,7 @@
   },
   {
     "description": "M12676EN-1 - F2140",
-    "files": [],
+    "files": ["smos40.json"],
     "data": {
       "31805": {
         "mappings": {
@@ -400,6 +437,24 @@
           "2": "Add. heat only"
         }
       },
+      "40181": {
+        "mappings": {
+          "0": "Off",
+          "1": "On"
+        }
+      },
+      "40182": {
+        "mappings": {
+          "0": "Off",
+          "1": "On"
+        }
+      },
+      "40183": {
+        "mappings": {
+          "0": "Off",
+          "1": "On"
+        }
+      },
       "31029": {
         "mappings": {
           "10": "Off",
@@ -407,6 +462,144 @@
           "30": "Heat",
           "40": "Pool",
           "60": "Cooling"
+        }
+      },
+      "32196": {
+        "mappings": {
+          "0": "No alarm",
+          "1": "Active alarm"
+        }
+      }
+    }
+  },
+  {
+    "description": "M12676EN-1 - Accessories",
+    "files": [
+      "s320_s325.json",
+      "s735.json",
+      "s1155_s1255.json",
+      "s2125.json",
+      "smos40.json"],
+    "data": {
+      "30131": {
+        "mappings": {
+          "0": "Inactive",
+          "10": "Off",
+          "20": "Opening",
+          "30": "Closing"
+        }
+      },
+      "31032": {
+        "mappings": {
+          "0": "Inactive",
+          "10": "Off",
+          "20": "Opening",
+          "30": "Closing"
+        }
+      },
+      "31033": {
+        "mappings": {
+          "0": "Inactive",
+          "10": "Off",
+          "20": "Opening",
+          "30": "Closing"
+        }
+      },
+      "31034": {
+        "mappings": {
+          "0": "Inactive",
+          "10": "Off",
+          "20": "Opening",
+          "30": "Closing"
+        }
+      },
+      "31035": {
+        "mappings": {
+          "10": "Off",
+          "20": "Active",
+          "30": "Passive",
+          "40": "Opening",
+          "50": "Closing"
+        }
+      },
+      "31134": {
+        "mappings": {
+          "0": "Closed to pool",
+          "1": "Open to pool"
+        }
+      },
+      "31135": {
+        "mappings": {
+          "0": "Closed to pool",
+          "1": "Open to pool"
+        }
+      },
+      "31570": {
+        "mappings": {
+          "10": "Off",
+          "20": "Opening",
+          "30": "Closing"
+        }
+      },
+      "31571": {
+        "mappings": {
+          "10": "Off",
+          "20": "Opening",
+          "30": "Closing"
+        }
+      },
+      "31824": {
+        "mappings": {
+          "0": "Off",
+          "1": "On"
+        }
+      },
+      "31825": {
+        "mappings": {
+          "0": "Off",
+          "1": "On"
+        }
+      },
+      "31826": {
+        "mappings": {
+          "0": "Off",
+          "1": "On"
+        }
+      },
+      "31828": {
+        "mappings": {
+          "0": "Off",
+          "1": "On"
+        }
+      },
+      "31829": {
+        "mappings": {
+          "0": "Off",
+          "1": "On"
+        }
+      },
+      "31831": {
+        "mappings": {
+          "0": "Off",
+          "1": "On"
+        }
+      },
+      "31832": {
+        "mappings": {
+          "0": "Closed",
+          "1": "Open"
+        }
+      },
+      "31834": {
+        "mappings": {
+          "0": "Off",
+          "1": "On"
+        }
+      },
+      "31836": {
+        "mappings": {
+          "0": "Off",
+          "1": "On"
         }
       }
     }

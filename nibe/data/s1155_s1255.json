@@ -345,7 +345,12 @@
     "factor": 10,
     "unit": "\u00b0C",
     "size": "s16",
-    "name": "supply-line-ep45-bt2-30097"
+    "name": "supply-line-ep45-bt2-30097",
+    "mapping": {
+      "10": "Intermittent",
+      "20": "Continuous",
+      "30": "10 Days Cont."
+    }
   },
   "30098": {
     "title": "Supply line (EP44-BT2)",
@@ -472,7 +477,13 @@
     "title": "Oper. mode shunt climate system 7",
     "factor": 1,
     "size": "u8",
-    "name": "oper-mode-shunt-climate-system-7-30131"
+    "name": "oper-mode-shunt-climate-system-7-30131",
+    "mappings": {
+      "0": "Inactive",
+      "10": "Off",
+      "20": "Opening",
+      "30": "Closing"
+    }
   },
   "30132": {
     "title": "Oper. mode shunt climate system 6",
@@ -2832,7 +2843,11 @@
     "factor": 10,
     "unit": "\u00b0C",
     "size": "s16",
-    "name": "superheat-evi-eb105-30854"
+    "name": "superheat-evi-eb105-30854",
+    "mapping": {
+      "0": "Auto",
+      "1": "Manual"
+    }
   },
   "30855": {
     "title": "EEV-ssh-error (EVI)(EB105)",
@@ -3342,7 +3357,11 @@
     "title": "Class 1 alarm",
     "factor": 1,
     "size": "u8",
-    "name": "class-1-alarm-32196"
+    "name": "class-1-alarm-32196",
+    "mappings": {
+      "0": "No alarm",
+      "1": "Active alarm"
+    }
   },
   "31019": {
     "title": "Frost protection status",
@@ -3402,25 +3421,50 @@
     "title": "Oper. mode shunt climate system 3",
     "factor": 1,
     "size": "u8",
-    "name": "oper-mode-shunt-climate-system-3-31032"
+    "name": "oper-mode-shunt-climate-system-3-31032",
+    "mappings": {
+      "0": "Inactive",
+      "10": "Off",
+      "20": "Opening",
+      "30": "Closing"
+    }
   },
   "31033": {
     "title": "Oper. mode shunt climate system 2",
     "factor": 1,
     "size": "u8",
-    "name": "oper-mode-shunt-climate-system-2-31033"
+    "name": "oper-mode-shunt-climate-system-2-31033",
+    "mappings": {
+      "0": "Inactive",
+      "10": "Off",
+      "20": "Opening",
+      "30": "Closing"
+    }
   },
   "31034": {
     "title": "Oper. mode shunt climate system 1",
     "factor": 1,
     "size": "u8",
-    "name": "oper-mode-shunt-climate-system-1-31034"
+    "name": "oper-mode-shunt-climate-system-1-31034",
+    "mappings": {
+      "0": "Inactive",
+      "10": "Off",
+      "20": "Opening",
+      "30": "Closing"
+    }
   },
   "31035": {
     "title": "Operating. mode shunt controlled additional heat",
     "factor": 1,
     "size": "u8",
-    "name": "operating-mode-shunt-controlled-additional-heat-31035"
+    "name": "operating-mode-shunt-controlled-additional-heat-31035",
+    "mappings": {
+      "10": "Off",
+      "20": "Active",
+      "30": "Passive",
+      "40": "Opening",
+      "50": "Closing"
+    }
   },
   "31038": {
     "title": "Fan mode 1",
@@ -3734,7 +3778,11 @@
     "title": "Reversing valve hot water (QN10)",
     "factor": 1,
     "size": "u8",
-    "name": "reversing-valve-hot-water-qn10-32197"
+    "name": "reversing-valve-hot-water-qn10-32197",
+    "mappings": {
+      "0": "Heating",
+      "1": "Hot water"
+    }
   },
   "31112": {
     "title": "Cooling activated (FLM 4)",
@@ -3824,13 +3872,21 @@
     "title": "Pool 2 (QN19)",
     "factor": 1,
     "size": "u8",
-    "name": "pool-2-qn19-31134"
+    "name": "pool-2-qn19-31134",
+    "mappings": {
+      "0": "Closed to pool",
+      "1": "Open to pool"
+    }
   },
   "31135": {
     "title": "Pool 1 (QN19)",
     "factor": 1,
     "size": "u8",
-    "name": "pool-1-qn19-31135"
+    "name": "pool-1-qn19-31135",
+    "mappings": {
+      "0": "Closed to pool",
+      "1": "Open to pool"
+    }
   },
   "31136": {
     "title": "Docked compressors pool 2",
@@ -4122,13 +4178,23 @@
     "title": "Status, heating dumping (ACS)",
     "factor": 1,
     "size": "u8",
-    "name": "status-heating-dumping-acs-31570"
+    "name": "status-heating-dumping-acs-31570",
+    "mappings": {
+      "10": "Off",
+      "20": "Opening",
+      "30": "Closing"
+    }
   },
   "31571": {
     "title": "Status, cooling dumping (ACS)",
     "factor": 1,
     "size": "u8",
-    "name": "status-cooling-dumping-acs-31571"
+    "name": "status-cooling-dumping-acs-31571",
+    "mappings": {
+      "10": "Off",
+      "20": "Opening",
+      "30": "Closing"
+    }
   },
   "31572": {
     "title": "Used compressors hot water",
@@ -4698,19 +4764,31 @@
     "title": "Climate system 4",
     "factor": 1,
     "size": "u8",
-    "name": "climate-system-4-31824"
+    "name": "climate-system-4-31824",
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "31825": {
     "title": "Climate system 3",
     "factor": 1,
     "size": "u8",
-    "name": "climate-system-3-31825"
+    "name": "climate-system-3-31825",
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "31826": {
     "title": "Climate system 2",
     "factor": 1,
     "size": "u8",
-    "name": "climate-system-2-31826"
+    "name": "climate-system-2-31826",
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "31827": {
     "title": "Climate system 1 (HMP)",
@@ -4722,25 +4800,41 @@
     "title": "Pool 2 pump status",
     "factor": 1,
     "size": "u8",
-    "name": "pool-2-pump-status-31828"
+    "name": "pool-2-pump-status-31828",
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "31829": {
     "title": "Pool 1 pump status",
     "factor": 1,
     "size": "u8",
-    "name": "pool-1-pump-status-31829"
+    "name": "pool-1-pump-status-31829",
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "31831": {
     "title": "ACS EQ1-QN12",
     "factor": 1,
     "size": "u8",
-    "name": "acs-eq1-qn12-31831"
+    "name": "acs-eq1-qn12-31831",
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "31832": {
     "title": "ACS EQ1-GP20",
     "factor": 1,
     "size": "u8",
-    "name": "acs-eq1-gp20-31832"
+    "name": "acs-eq1-gp20-31832",
+    "mappings": {
+      "0": "Closed",
+      "1": "Open"
+    }
   },
   "31833": {
     "title": "Passive cooling shunt",
@@ -4752,13 +4846,21 @@
     "title": "Passive cooling pump (GP13)",
     "factor": 1,
     "size": "u8",
-    "name": "passive-cooling-pump-gp13-31834"
+    "name": "passive-cooling-pump-gp13-31834",
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "31836": {
     "title": "Oper. mode groundwater pump",
     "factor": 1,
     "size": "u8",
-    "name": "oper-mode-groundwater-pump-31836"
+    "name": "oper-mode-groundwater-pump-31836",
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "31838": {
     "title": "Alarm number (EB100-EP15)",
@@ -5814,7 +5916,11 @@
     "max": 1.0,
     "default": 1.0,
     "name": "permit-additional-heat-heating-40181",
-    "write": true
+    "write": true,
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "40182": {
     "title": "Permit heating",
@@ -5824,7 +5930,11 @@
     "max": 1.0,
     "default": 1.0,
     "name": "permit-heating-40182",
-    "write": true
+    "write": true,
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "40183": {
     "title": "Permit cooling",
@@ -5834,7 +5944,11 @@
     "max": 1.0,
     "default": 1.0,
     "name": "permit-cooling-40183",
-    "write": true
+    "write": true,
+    "mappings": {
+      "0": "Off",
+      "1": "On"
+    }
   },
   "40184": {
     "title": "Auto mode, start temperature for cooling",
